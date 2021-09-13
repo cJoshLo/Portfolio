@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <tite></tite>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!-- this makes sure that the small diffferences in the web browser are accounted for-->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awsome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdFgVK/Kvc=" crossorigin="anonymous"/> 
+        <!--Update these with your own fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/f44861d37f.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+         <header>
+             <div class = "logo">
+                <img src="img/logo3.PNG" alt=""> <!--logo for my website-->
+             </div>
+             <button class="nav-toggle" aria-label="toggle navigation">
+                 <span class="hamburger"></span>
+             </button>
+             <nav class = "nav">
+                 <ul class="nav__list"><!--this is a sub class of the nav that is what the double under score is for-->
+                    <li class= "nav__item"><a href ="#home" class="nav__link">Home</a></li>
+                    <li class= "nav__item"><a href ="#services" class="nav__link">Services</a></li>
+                    <li class= "nav__item"><a href ="#about" class="nav__link">About</a></li>
+                    <li class= "nav__item"><a href ="#work" class="nav__link">Work</a></li>
+                 </ul>
+             </nav>
+         </header>
+
+         <!--Introduction-->
+         <section class="intro" id="home">
+            <h1 class="section__title section__title--intro"><!-- the double -- is to show that this is a modifier class, modifing the section title class-->
+                Hi, I am <strong>Joshua Lopez</strong>
+            </h1>
+                <p class="section__subtitle section__subtitle--intro">Full-Stack Developer</p>
+                <img src="img/holder.jpg" alt="profile picture for Joshua Lopez" class="intro__img"><!--This is the profile image for the top of the website-->
+         </section>
+
+         <!--My Services section-->
+         <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class= "services">
+                <div class="service">
+                    <h3>C++</h3>
+                    <p>I am fluent in C++, I have coded multiple applications both large and small with this language.
+                        I full understand its standard library and how to optimize program run time. 
+                    </p>
+                </div><!--service-->
+                <div class="service">
+                    <h3>Data Structure</h3>
+                    <p>I understand a wide range of data structures from arrays to hash tables. I know when to use each and the 
+                        limitation each one has. 
+                    </p>
+                </div><!--service-->
+                <div class="service">
+                    <h3>Alogrithums</h3>
+                    <p>This is a key component to having programs run quickly. I know when to code a simple Alogrithums
+                        that runs in n time and when to use more space and create a logn run time alforithum.  
+                    </p>
+                </div><!--service-->
+            </div>
+            <a href="#work" class="btn">My Work</a>
+         </section>
+
+
+         <!--About Me-->
+         <section class="about-me" id="about">
+            <h2 class="section__title section__title--about" class= "section__title--work">What I Do</h2>
+            <p class="section__subtitle section__subtitle--about" class= "section__subtitle--work">Web Publisher for NetApp</p>
+            <div class="about-me__body">
+                <p>Currently a part of the Digital Go-to-Market team, using agile methods I aided in the building and
+                    transitioning of a 10,000 page site to 3,000 high-value search optimized pages in NetApp’s rebranding.</p>
+                <p>Daily cross functional coordination with several stakeholders to quickly create new digital content and
+                    updates to support the business’s initiatives and revenue marketing’s campaigns.</p>
+                <p>NetApp’s new site was launched with six different languages, new navigation, information architecture, and
+                    back-end technology, requiring immense organization to ensure everything was bug free by launch date.</p>
+            </div>
+            <img src="img/code.jpg" class="about-me__img" alt="Secondary image of Josh">
+         </section>
+
+         <!--My Work-->
+         <section class="my-work" id="work">
+             <h2 class="section__title--work">My work</h2>
+             <p class="section__subtitle--work"> A selection of my range of work</p>
+             <div class="portfolio">
+                 <!--Portfolio item 01-->
+                 <a href="#" class="portfolio__item">
+                     <img src="img/airbnb.png" alt="Aribnb clone" class="portfolio__img"><!--image of the work item you talking about-->
+                 </a>
+                 <!--Portfolio item 02-->
+                 <a href="#" class="portfolio__item">
+                    <img src="img/webapp.png" alt="Web application" class="portfolio__img"><!--image of the work item you talking about-->
+                </a>
+                <!--Portfolio item 03-->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/unity.png" alt="Unity physical therapy game" class="portfolio__img"><!--image of the work item you talking about-->
+                </a>
+                <!--Portfolio item 04-->
+                <a href="#" class="portfolio__item">
+                    <img src="img/iphone.png" alt="Agmented reality mobile application" class="portfolio__img"><!--image of the work item you talking about-->
+                </a>
+                 
+                 
+             </div>
+         </section>
+         <!--Footer-->
+         <footer class="footer">
+             <a href="mailto:c.lopezjoshua@gmail.com" class="footer__link">Email Me</a>
+             <ul class="social-list">
+                 <li class="social-list__item">
+                     <a class="social-list__link" href="https://www.linkedin.com/in/joshclopez/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                 <li class="social-list__item">
+                     <a class="social-list__link"href="https://github.com/cJoshLo?tab=repositories">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </li>
+             </ul>
+         </footer>
+
+         <script src="js/index.js"></script> <!--adding the javascript file to the HTML page so they are connected-->
+
+
+    </body>
+</html>
