@@ -310,7 +310,7 @@ header{
 }
 
 .service{
-    max-width: 500px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -380,17 +380,24 @@ header{
 .portfolio{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+ 
 }
 
 .portfolio__item{
-    background-color: var(--clr-accent); /* The color under the images that will be seen when hover */
+    /* background-color: var(--clr-accent); The color under the images that will be seen when hover */
     overflow: hidden; /* when the box grows it does not grow outside of its box onto the others */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio__img{
+    background-color: var(--clr-accent); /* The color under the images that will be seen when hover */
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear; /* can change this to add more or less of the background color through */
+        
 }
 
 .portfolio__img:hover,
