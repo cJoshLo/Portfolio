@@ -392,7 +392,6 @@ header{
 }
 
 .portfolio__item{
-    /* background-color: var(--clr-accent); The color under the images that will be seen when hover */
     overflow: hidden; /* when the box grows it does not grow outside of its box onto the others */
     display: flex;
     align-items: center;
