@@ -17,44 +17,49 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <button class="btn" type="button" onclick="location.href='index.html'">Home</button>
-            <!--logo for my website-->
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <!--this is a sub class of the nav that is what the double under score is for-->
-                <li class="nav__item"><a onclick="location.href='index.html'" class="nav__link">Home</a></li>
-                <li class="nav__item"><a onclick="location.href='Auction.html'" class="nav__link">Auction Project</a>
-                </li>
-                <li class="nav__item"><a onclick="location.href='Cognitive.html'" class="nav__link">Cognitive Work</a>
-                </li>
-                <!-- <li class= "nav__item"><a href ="#work" class="nav__link">Work</a></li> -->
-            </ul>
-        </nav>
-    </header>
-
-    <!--Introduction-->
-    <section class="intro">
-        <h1 class="section__title section__title--intro">
-            <!-- the double -- is to show that this is a modifier class, modifing the section title class-->
-            <strong>Rehabilitation Project</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">C++, Unity</p>
-        <img src="img/UnityAvatar.png" alt="Unity project" class="intro__img">
-        <!--This is the profile image for the top of the website-->
-    </section>
+    <div class="project_title_bar">
+        <header>
+            <div class="logo">
+                <button class="btn" type="button" onclick="location.href='index.html'">Home</button>
+                <!--logo for my website-->
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <!--this is a sub class of the nav that is what the double under score is for-->
+                    <li class="nav__item"><a onclick="location.href='index.html'" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a onclick="location.href='Auction.html'" class="nav__link">Auction
+                            Project</a>
+                    </li>
+                    <li class="nav__item"><a onclick="location.href='Cognitive.html'" class="nav__link">Cognitive
+                            Work</a>
+                    </li>
+                    <!-- <li class= "nav__item"><a href ="#work" class="nav__link">Work</a></li> -->
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="project_title">
+        <!--Introduction-->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <!-- the double -- is to show that this is a modifier class, modifing the section title class-->
+                <strong>Rehabilitation Project</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">C++, Unity</p>
+            <img src="img/UnityAvatar.png" alt="Unity project" class="intro__img">
+            <!--This is the profile image for the top of the website-->
+        </section>
+    </div>
 
     <!--Over view section-->
     <section class="my-services2" id="services">
         <h2 class="section__title section__title--services">Over View</h2>
         <div class="services">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas 
-                possimus ipsa, perspiciatis mollitia corrupti dignissimos aliquam hic pariatur dolorem commodi 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas
+                possimus ipsa, perspiciatis mollitia corrupti dignissimos aliquam hic pariatur dolorem commodi
                 consectetur maiores, qui at harum suscipit aliquid adipisci odio.
             </p>
             <!-- <div class="service">
@@ -80,6 +85,26 @@
             <!--service-->
         </div>
     </section>
+
+    <!--Side by Side-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="sidexsideImage" src="img/normalPT.webp" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title">Fixing the Issue</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dolores amet provident illo, obcaecati velit necessitatibus, ullam neque animi 
+                                consequuntur id minima? Quidem adipisci quae commodi sequi esse ratione amet?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!--Footer-->

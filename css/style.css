@@ -21,7 +21,7 @@
     --fs-body:1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25),/* showdow 1 layer that goes out more*/
-         0.125em 0.125em 0.25em rgba(0,0,0,0.15);/* showdow that is closer to the image and lighter but stacks so is darker*/
+         0.125em 0.125em 0.25em #00000026;/* showdow that is closer to the image and lighter but stacks so is darker*/
 }
 
 @media(mind-width: 800px){
@@ -227,7 +227,7 @@ header{
 
 .hamburger::before,
 .hamburger::after{
-    content: ''; /* suedo elements will not work unless you give it some content, here we give it content of blank*/
+    content: ''; 
     position: absolute;
     left: 0;
     right: 0;
@@ -279,6 +279,18 @@ header{
         width: calc(100% + 1.5em);
     }
 }
+/* Hero Component for Projects */
+.project_title_bar{
+    width: calc(100% + 1.5em);
+    background-color: #383e41
+}
+
+.project_title{
+    width: calc(100% + 1.5em);
+    background-color: #b6a89c;
+    
+}
+
 
 /* My Services section */
 
@@ -411,6 +423,94 @@ header{
     transform: scale(1.2);
     opacity: 0.5;
 }
+
+
+/* Card Flip in Cognitive page */
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #3b9ee0;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+/* Side by side component */
+
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    width: 70%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+div.img-square-wrapper{
+     margin-right: -200px;
+}
+
+div.card-body{
+    padding-top: 10%;
+}
+
+.sidexsideImage{
+    width: 70%;
+}
+
+h1.card-title{
+    text-align: center;
+    font-style: var(--ff-primary);
+}
+
+@media(max-width: 600px){
+    div.img-square-wrapper{
+            margin-right: -100px;
+    }
+    div.card-body{
+        padding-top: 2%;
+    }
+}
+@media(max-width: 300px){
+    div.img-square-wrapper{
+            margin-right: -50px;
+    }
+    div.card-body{
+        padding-top: 1%;
+    }
+}
+
 
 /* Footer */
 

@@ -17,37 +17,39 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <button class="btn" type="button" onclick="location.href='index.html'">Home</button>
-            <!--logo for my website-->
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <!--this is a sub class of the nav that is what the double under score is for-->
-                <li class="nav__item"><a onclick="location.href='index.html'" class="nav__link">Home</a></li>
-                <li class="nav__item"><a onclick="location.href='Auction.html'" class="nav__link">Auction Project</a>
-                </li>
-                <li class="nav__item"><a onclick="location.href='rehab.html'" class="nav__link">Unity Work</a></li>
-                <!-- <li class= "nav__item"><a href ="#work" class="nav__link">Work</a></li> -->
-            </ul>
-        </nav>
-    </header>
-
-    <!--Introduction-->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            <!-- the double -- is to show that this is a modifier class, modifing the section title class-->
-            Cognitive Testing Application
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">JavaScript, HTML, CSS</p>
-        <img src="img/reactiontestscore.png" alt="picture of the home screen of the application" class="intro__img">
-        <!--This is the profile image for the top of the website-->
-    </section>
-
+    <div class="project_title_bar">
+        <header>
+            <div class="logo">
+                <button class="btn" type="button" onclick="location.href='index.html'">Home</button>
+                <!--logo for my website-->
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <!--this is a sub class of the nav that is what the double under score is for-->
+                    <li class="nav__item"><a onclick="location.href='index.html'" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a onclick="location.href='Auction.html'" class="nav__link">Auction
+                            Project</a>
+                    </li>
+                    <li class="nav__item"><a onclick="location.href='rehab.html'" class="nav__link">Unity Work</a></li>
+                    <!-- <li class= "nav__item"><a href ="#work" class="nav__link">Work</a></li> -->
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="project_title">
+        <!--Introduction-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Cognitive Testing Application
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">JavaScript, HTML, CSS</p>
+            <img src="img/reactiontestscore.png" alt="picture of the home screen of the application" class="intro__img">
+            <!--This is the profile image for the top of the website-->
+        </section>
+    </div>
 
     <!--Over View setion-->
     <section class="about-me" id="about">
@@ -70,21 +72,68 @@
         <h2 class="section__title--work">Reaction Test</h2>
         <p class="section__subtitle--work"> JavaScript Coded Tests</p>
         <div class="portfolio">
-            <!--Portfolio item 01-->
-            <img src="img/reactiontime.png" alt="reaction time test" class="portfolio__img">
-            </a>
-            <!--Portfolio item 02-->
-            <img src="img/reactionstroop.png" alt="Stroop test" class="portfolio__img">
-            </a>
-            <!--Portfolio item 03-->
-            <img src="img/reactionRVI.png" alt="RVP Test" class="portfolio__img">
-            </a>
-            <!--Portfolio item 04-->
-            <!-- <a href="#" class="portfolio__item">
-                           <img src="img/iphone.png" alt="Agmented reality mobile application" class="portfolio__img">image of the work item you talking about -->
-            <!-- </a> -->
+            <!--Test 1-->
+            <div class="portfolio__item">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
 
+                        <div class="flip-card-front">
+                            <img src="img/reactiontime.png" alt="reaction time test" class="portfolio__img">
+                        </div>
 
+                        <div class="flip-card-back">
+                            <h1>Reaction Time</h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel et consequatur
+                            vero assumenda reiciendis accusamus fugit repellendus
+                            quidem! Culpa ratione consequuntur omnis quis repellendus laboriosam,
+                            tempora ipsum repudiandae officiis.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Test 2-->
+            <div class="portfolio__item">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <img src="img/reactionstroop.png" alt="Stroop test" class="portfolio__img1">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <h1>Stroop Test</h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel et consequatur
+                            vero assumenda reiciendis accusamus fugit repellendus
+                            quidem! Culpa ratione consequuntur omnis quis repellendus laboriosam,
+                            tempora ipsum repudiandae officiis.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Test 3-->
+            <div class="portfolio__item">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <img src="img/reactionRVI.png" alt="RVP Test" class="portfolio__img">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <h2>Rapid Visual Processing</h1>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel et consequatur
+                                vero assumenda reiciendis accusamus fugit repellendus
+                                quidem! Culpa ratione consequuntur omnis quis repellendus laboriosam,
+                                tempora ipsum repudiandae officiis.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

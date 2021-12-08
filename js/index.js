@@ -11,3 +11,4 @@ navLinks.forEach(link => {//for each link indeisde the node list we are creating
         document.body.classList.remove('nav-open');//function when someone clicks, remove nav-open from the class list
     })
 });//we could toggle the nav-open, document.body.classList.toggle, but this is safer, stoping accidental clicks when it is off screen. Not super clear from video
+
